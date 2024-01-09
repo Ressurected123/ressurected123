@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    background-color: #000000eb;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+    box-shadow: 0 5px 10px #000;
+}
+header .logo{
+    font-size: 20px;
+    font-weight: 900;
+    color: #000;
+    transition: .5s;
+}
+
+header .logo:hover {
+    transform: scale(1.2);
+}
+header nav ul li {
+    position: relative;
+    float: left;
+}
+header nav ul li a{
+    padding: 15px;
+    color: #000;
+    font-size: 16px;
+    display: block;
+}
+header nav ul li a:hover{
+    background: #000;
+    color: #fff;
+}
+nav ul li ul{
+    position: absolute;
+    left: 0;
+    width: 180px;
+    background: #fff;
+    display: none;
+}
+nav ul li ul li{
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, .1);
+}
+
+.img{
+    width: 100%;
+    height: 700PX;
+}
+.block{
+    background-color:;
+    width: 100%;
+    height: 100%;
+}
+.block6 {
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+}
+.block10 {
+    margin-left: 1%;
+    margin-top: 30px;
+    width: 40%;
+    height: 30%;
+
+}
+.block9 {
+    margin-top: 30px;
+    width: 600px;
+    height: 350px;
+}
+
+.qwe{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+.img100 {
+    width: 100%;
+    height: 100%;
+}
+.block2{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+.map-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.block3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 100%;
+}
+.block_map{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+footer{
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    background-color: #000;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 25px;
+}
+footer a{
+    color: white;
+    font-size: 14px;
+    margin-left: 10px;
+}
+footer nav a:hover{
+    border-bottom: 1px solid white;
+}
+footer .logo{
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+    transition: .5s;
+}
+
+footer .logo:hover {
+    transform: scale(1.2);
+}
+.block4{
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 13px;
+}
+.contacts {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.map-container {
+    width: 50%;
+    margin-top: 20px;
+}
+.block12{
+    margin-left: 10px;
+    width: 80%;
+}
+.block11{
+    width: 75%;
+    height: 100%;
+}
+.block8{
+    color: white;
+    display: flex;
+    justify-content: space-around;    
+}
+.block_cart{
+    color: #000;
+    display: flex;
+    justify-content: space-around;    
+}
+.block20{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.block21 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 45%;
+    height: 250px;
+    background-color: white;
+   
+}
+.block23 {
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 45%;
+    height: 250px;
+    background-color: white;
+   
+}
+.text40{
+    font-size: 30px;
+    margin-left: 3%;
+    margin-top: 3%;
+}
+.text41{
+    font-size: 25px;
+    margin-left: 3%;
+    margin-top: 3%;
+}
+.text42{
+    font-size: 25px;
+    text-align: right;
+    margin-right: 10%;
+    margin-top: 10%;
+}
+.text43{
+    font-size: 25px;
+    text-align: right;
+    margin-right: 10%;
+    margin-top: 3%;
+}
+article {
+    --img-scale: 1.001;
+    --title-color: black;
+    --link-icon-translate: -20px;
+    --link-icon-opacity: 0;
+    border-radius: 16px;
+    box-shadow: none;
+    background: #fff;
+    transform-origin: center;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+  }
+  
+  article a::after {
+    position: absolute;
+    inset-block: 0;
+    inset-inline: 0;
+    cursor: pointer;
+    content: "";
+  }
+  
+  /* basic article elements styling */
+  article h2 {
+    margin: 0 0 18px 0;
+    font-family: "Bebas Neue", cursive;
+    font-size: 1.9rem;
+    letter-spacing: 0.06em;
+    color: var(--title-color);
+    transition: color 0.3s ease-out;
+  }
+  
+  figure {
+    margin: 0;
+    padding: 0;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+  }
+  
+  article img {
+    max-width: 100%;
+    transform-origin: center;
+  }
+  
+  .article-body {
+    padding: 24px;
+  }
+  
+  article a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #28666e;
+  }
+  
+  article a:focus {
+    outline: 1px dotted #28666e;
+  }
+  
+  article a .icon {
+    min-width: 24px;
+    width: 24px;
+    height: 24px;
+    margin-left: 5px;
+    transform: translateX(var(--link-icon-translate));
+    opacity: var(--link-icon-opacity);
+    transition: all 0.3s;
+  }
+  
+  /* using the has() relational pseudo selector to update our custom properties */
+  article:has(:hover, :focus) {
+    --img-scale: 1.1;
+    --title-color: #28666e;
+    --link-icon-translate: 0;
+    --link-icon-opacity: 1;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  }
+
+  
+  .articles {
+    display: grid;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 24px;
+  }
+  
+  @media screen and (max-width: 960px) {
+    article {
+      container: card/inline-size;
+    }
+    .article-body p {
+      display: none;
+    }
+  }
+  
+  @container card (min-width: 380px) {
+    .article-wrapper {
+      display: grid;
+      grid-template-columns: 100px 1fr;
+      gap: 16px;
+    }
+    .article-body {
+      padding-left: 0;
+    }
+    figure {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    figure img {
+      height: 100%;
+      aspect-ratio: 1;
+      object-fit: cover;
+    }
+  }
+  
+  .sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+  }
